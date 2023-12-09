@@ -1,0 +1,187 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 1rem;
+}
+img {
+  display: block;
+  max-width: 100%;
+}
+html,
+body {
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+  background-color: #eee;
+}
+.container {
+  max-width: calc(100% - 20%);
+  margin: 0 auto;
+}
+.header {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  max-width: calc(100% - 50%);
+  padding: 2rem;
+  background-color: #fff;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+.all-money {
+  font-size: 3rem;
+}
+.all-about {
+  font-size: 1.2rem;
+}
+.main {
+  margin-bottom: 2rem;
+}
+.products {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+.product-card {
+  /* background-color: red; */
+  max-width: 250px;
+  padding: 2rem;
+  box-shadow: 0.1;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+.product-about {
+  text-align: center;
+  border-bottom: 1px solid black;
+  padding-bottom: 0.6rem;
+  margin-bottom: 15px;
+}
+.product-img {
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 186px;
+  height: 163px;
+}
+.product-texts p,
+.product-texts strong {
+  font-size: 1.1rem;
+}
+.product-buying {
+  text-align: center;
+}
+.buying-about {
+  background-color: #eee;
+  padding: 0.5rem 0;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 3px 0;
+  margin-bottom: 15px;
+}
+.buying-display,
+.buying-about p {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+.buying-btns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+.buying-btns button {
+  width: 40px;
+  height: 40px;
+  border: none;
+  background-color: #007e70;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #fff;
+  outline: none;
+  transition: ease 300ms;
+}
+.buying-btns button:hover {
+  opacity: 0.9;
+}
+.buying-btns p {
+  flex-grow: 1;
+  background-color: #eee;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.1rem;
+  border-radius: 5px;
+}
+
+.footer {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+}
+.pay-title .all-about {
+  text-align: center;
+  font-size: 2rem;
+}
+.pay-title {
+  margin-bottom: 15px;
+}
+.pay-unit {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+}
+.pay-moneys {
+  padding: 1rem;
+  max-width: 210px;
+  background: rgba(33, 202, 121, 0.95);
+  border-radius: 5px;
+}
+.pay-h1 {
+  font-size: 1.3rem;
+  color: #fff;
+  text-align: center;
+}
+.buy-products {
+  min-height: 30px;
+  gap: 10px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.pay-product {
+  display: flex;
+  width: 120px;
+  padding: 0.3rem;
+  flex-direction: column;
+  background-color: #eee;
+  justify-content: center;
+  align-items: center;
+}
+.pay-money{
+  color: #fff;
+}
+@media screen and (max-width: 500px) {
+  .header {
+    max-width: calc(100% - 20%);
+  }
+  .all-money {
+    font-size: 2rem;
+  }
+  .all-about {
+    font-size: 1.2rem;
+  }
+  .product-card {
+    width: 400px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .pay-unit {
+    gap: 5px;
+  }
+}

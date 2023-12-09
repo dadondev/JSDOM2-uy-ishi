@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS DOM 2-dars uy-ishi || Bozorlik</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header class="container header">
+      <span class="all-about">Sizning hisobingizda mavjud pul miqdori !</span>
+      <h1 class="all-money">200,000 uzs</h1>
+    </header>
+    <main class="container main">
+      <div class="products">
+        <div class="product-card card1">
+          <div class="product-about">
+            <i class="yurak"></i>
+            <div class="product-img">
+              <img src="./images/bananas.png" alt="img" />
+            </div>
+            <div class="product-texts">
+              <p>Mahsulot turi: <strong>Banan</strong></p>
+              <p>Narxi: <strong>25,000</strong></p>
+            </div>
+          </div>
+          <div class="product-buying">
+            <div class="buying-about">
+              <p>To'lov</p>
+              <div class="buying-display">25,000</div>
+            </div>
+            <div class="buying-btns">
+              <button id="banan-minus-product1" class="buying-plus">-</button>
+              <p class="how-many"><span id="display-banan">1</span> kg</p>
+              <button id="banan-plus-product1" class="buying-minus">+</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-about">
+            <i class="yurak"></i>
+            <div class="product-img">
+              <img src="./images/bbary 1.png" alt="img" />
+            </div>
+            <div class="product-texts">
+              <p>Mahsulot turi: <strong>Maymunjon</strong></p>
+              <p>Narxi: <strong>25,000</strong></p>
+            </div>
+          </div>
+          <div class="product-buying">
+            <div class="buying-about">
+              <p>To'lov</p>
+              <div class="buying-display">25,000</div>
+            </div>
+            <div class="buying-btns">
+              <button id="may-plus-product1" class="buying-plus">-</button>
+              <p class="how-many"><span id="may-display">1</span> kg</p>
+              <button id="may-minus-product1" class="buying-minus">+</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-about">
+            <i class="yurak"></i>
+            <div class="product-img">
+              <img src="./images/kakos.png" alt="img" />
+            </div>
+            <div class="product-texts">
+              <p>Mahsulot turi: <strong>Kakos</strong></p>
+              <p>Narxi: <strong>25,000</strong></p>
+            </div>
+          </div>
+          <div class="product-buying">
+            <div class="buying-about">
+              <p>To'lov</p>
+              <div class="buying-display">25,000</div>
+            </div>
+            <div class="buying-btns">
+              <button id="kak-plus-product1" class="buying-plus">-</button>
+              <p class="how-many"><span id="kak-display">1</span> kg</p>
+              <button id="kak-minus-product1" class="buying-minus">+</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-about">
+            <i class="yurak"></i>
+            <div class="product-img">
+              <img src="./images/kiwi.png" alt="img" />
+            </div>
+            <div class="product-texts">
+              <p>Mahsulot turi: <strong>Kivi</strong></p>
+              <p>Narxi: <strong>45,000</strong></p>
+            </div>
+          </div>
+          <div class="product-buying">
+            <div class="buying-about">
+              <p>To'lov</p>
+              <div class="buying-display">45,000</div>
+            </div>
+            <div class="buying-btns">
+              <button id="kivi-plus-product1" class="buying-plus">-</button>
+              <p class="how-many"><span id="kivi-display">1</span> kg</p>
+              <button id="kivi-minus-product1" class="buying-minus">+</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-about">
+            <i class="yurak"></i>
+            <div class="product-img">
+              <img
+                src="./images/pasha_ai_3_red_strawberries_photo_realistic_product_shot_isolat_73e52d13-75c0-4ca0-8ade-83df4ae0b415-transformed 2.png"
+                alt="img"
+              />
+            </div>
+            <div class="product-texts">
+              <p>Mahsulot turi: <strong>Qulupnay</strong></p>
+              <p>Narxi: <strong>30,000</strong></p>
+            </div>
+          </div>
+          <div class="product-buying">
+            <div class="buying-about">
+              <p>To'lov</p>
+              <div class="buying-display">30,000</div>
+            </div>
+            <div class="buying-btns">
+              <button id="qulup-plus-product1" class="buying-plus">-</button>
+              <p class="how-many"><span id="qulup-display">1</span> kg</p>
+              <button id="qulup-minus-product1" class="buying-minus">+</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer container">
+      <div class="pay-title">
+        <h1 class="all-about">Haridlaringiz !</h1>
+      </div>
+      <div class="pay-unit">
+        <div class="pay-moneys" id="pay-moneys">
+          <h1 class="pay-h1">To'lov</h1>
+          <h1 class="all-money pay-money" id="pay-money">200000</h1>
+        </div>
+        <div class="buy-products">
+          <div class="pay-product">
+            <span class="pay-name">Banan</span>
+            <p><span class="pay-how-many">1</span><span>kg</span></p>
+          </div>
+          <div class="pay-product">
+            <span class="pay-name">Maymunjon</span>
+            <p><span class="pay-how-many">1</span><span>kg</span></p>
+          </div>
+          <div class="pay-product">
+            <span class="pay-name">Kakos</span>
+            <p><span class="pay-how-many">1</span><span>kg</span></p>
+          </div>
+          <div class="pay-product">
+            <span class="pay-name">Kivi</span>
+            <p><span class="pay-how-many">1</span><span>kg</span></p>
+          </div>
+          <div class="pay-product">
+            <span class="pay-name">Qulupnay</span>
+            <p><span class="pay-how-many">1</span><span>kg</span></p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="./app.js"></script>
+  </body>
+</html>

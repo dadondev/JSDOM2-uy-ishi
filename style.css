@@ -163,7 +163,7 @@ body {
   justify-content: center;
   align-items: center;
 }
-.pay-money{
+.pay-money {
   color: #fff;
 }
 @media screen and (max-width: 500px) {
@@ -183,5 +183,24 @@ body {
 @media screen and (max-width: 400px) {
   .pay-unit {
     gap: 5px;
+  }
+}
+@media screen and (max-width: 390px) {
+  .pay-unit {
+    gap: 5px;
+  }
+  .pay-product {
+    width: auto;
+  }
+}
+@media screen and (max-width: 350px) {
+  .pay-unit {
+    gap: 5px;
+    flex-direction: column;
+  }
+  .pay-products {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
   }
 }
